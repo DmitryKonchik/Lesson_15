@@ -28,6 +28,7 @@ public class Main {
         animalNameList.removeAnimalName();
         animalNameList.printAnimalName();
 
+
 //        Third task
 
         Student student1 = new Student("Bob", "c2", 2, new int[]{3, 5, 6, 7});

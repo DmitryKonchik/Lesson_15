@@ -5,9 +5,10 @@ public class University {
 
     private List<Student> students = new ArrayList<>();
 
-    public void addStudent(Student student){
+    public void addStudent(Student student) {
         students.add(student);
     }
+
     public void removeBedStudents() {
         for (int i = students.size() - 1; i >= 0; i--) {
             double averageScore = 0;
@@ -19,11 +20,12 @@ public class University {
             averageScore = averageScore / countOfMarks;
             if (averageScore < 3) {
                 students.remove(students.get(i));
-            }else {
+            } else {
                 students.get(i).setCourse(students.get(i).getCourse() + 1);
             }
         }
     }
+
     public void printStudent(int course) {
         for (Student s : students) {
             if (s.getCourse() == course) {
@@ -31,10 +33,11 @@ public class University {
             }
         }
     }
+
     public void printStudent() {
         for (Student s : students) {
-                System.out.println(s);
-            }
+            System.out.println(s);
+        }
 
     }
 }
