@@ -11,9 +11,21 @@ public class Main {
         Set<String> listOfNumber = new HashSet<>();
 
         for (String s : numbers) {
-            listOfNumber.add(s.replaceAll("\\s*",""));
+            listOfNumber.add(s.replaceAll("\\s*", ""));
         }
         System.out.println(listOfNumber);
 
+//        Second Task
+        AnimalNameList animalNameList = new AnimalNameList();
+
+        animalNameList.addAnimalName("1");
+        animalNameList.addAnimalName("2");
+        animalNameList.addAnimalName("3");
+        animalNameList.addAnimalName("4");
+        animalNameList.addAnimalName("5");
+        animalNameList.removeAnimalName();
+        animalNameList.removeAnimalName();
+        animalNameList.removeAnimalName();
+        animalNameList.printAnimalName();
     }
 }
